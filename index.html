@@ -1,553 +1,531 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="fr"><head>
+<html class="dark" lang="fr">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ADNANE BOUJANA |  PERFORMANCE COACHING</title>
+<title>ADNANE BOUJANA | PERFORMANCE COACHING</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Plus+Jakarta+Sans:wght@400;600&family=Geist:wght@400;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-error-container": "#ffdad6",
-                        "tertiary-fixed": "#e5e2e1",
-                        "tertiary-container": "#e5e2e1",
-                        "on-primary-fixed-variant": "#3c4d00",
-                        "surface-container-lowest": "#0e0e0e",
-                        "surface-container-low": "#1c1b1b",
-                        "surface-container-high": "#2a2a2a",
-                        "on-secondary": "#2f3131",
-                        "primary": "#ffffff",
-                        "on-tertiary-container": "#656464",
-                        "surface-container-highest": "#353534",
-                        "background": "#0a0a0a",
-                        "surface-tint": "#ccff00",
-                        "on-secondary-container": "#b4b5b5",
-                        "on-surface": "#e5e2e1",
-                        "on-primary-container": "#556d00",
-                        "tertiary-fixed-dim": "#c8c6c5",
-                        "on-surface-variant": "#c4c9ac",
-                        "primary-fixed-dim": "#ccff00",
-                        "surface": "#131313",
-                        "outline-variant": "#444933",
-                        "secondary-container": "#454747",
-                        "primary-container": "#ccff00",
-                        "error": "#ffb4ab",
-                        "on-secondary-fixed": "#1a1c1c",
-                        "surface-dim": "#131313",
-                        "surface-variant": "#353534",
-                        "inverse-on-surface": "#313030",
-                        "secondary-fixed": "#e2e2e2",
-                        "on-tertiary-fixed": "#1c1b1b",
-                        "on-primary-fixed": "#161e00",
-                        "error-container": "#93000a",
-                        "on-tertiary-fixed-variant": "#474746",
-                        "on-error": "#690005",
-                        "secondary": "#c6c6c7",
-                        "on-secondary-fixed-variant": "#454747",
-                        "inverse-primary": "#506600",
-                        "outline": "#8e9379",
-                        "surface-container": "#201f1f",
-                        "inverse-surface": "#e5e2e1",
-                        "on-primary": "#0a0a0a",
-                        "primary-fixed": "#ccff00",
-                        "on-tertiary": "#313030",
-                        "secondary-fixed-dim": "#c6c6c7",
-                        "surface-bright": "#3a3939",
-                        "tertiary": "#ffffff",
-                        "on-background": "#e5e2e1"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "margin-desktop": "64px",
-                        "container-max": "1440px",
-                        "base": "8px",
-                        "gutter": "24px",
-                        "margin-mobile": "20px"
-                    },
-                    "fontFamily": {
-                        "label-sm": ["Geist"],
-                        "headline-lg-mobile": ["Montserrat"],
-                        "headline-lg": ["Montserrat"],
-                        "display-lg": ["Montserrat"],
-                        "body-md": ["Plus Jakarta Sans"],
-                        "body-lg": ["Plus Jakarta Sans"],
-                        "headline-md": ["Montserrat"]
-                    },
-                    "fontSize": {
-                        "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "900"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
-                    }
-                }
-            }
-        }
-    </script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary-fixed-dim": "#ccff00",
+        "on-primary": "#0a0a0a",
+        "surface-container-lowest": "#0e0e0e",
+        "surface-container-low": "#1c1b1b",
+        "surface-container-high": "#2a2a2a",
+        "surface-container-highest": "#353534",
+        "background": "#0a0a0a",
+        "surface": "#131313",
+        "surface-container": "#201f1f",
+        "on-surface": "#e5e2e1",
+        "on-surface-variant": "#c4c9ac",
+        "secondary": "#c6c6c7",
+        "on-secondary-container": "#b4b5b5",
+        "outline-variant": "#444933",
+        "primary": "#ffffff",
+        "on-background": "#e5e2e1"
+      },
+      fontFamily: {
+        "headline-lg": ["Montserrat"],
+        "display-lg": ["Montserrat"],
+        "headline-md": ["Montserrat"],
+        "body-md": ["Plus Jakarta Sans"],
+        "body-lg": ["Plus Jakarta Sans"],
+        "label-sm": ["Geist"]
+      },
+      fontSize: {
+        "label-sm": ["12px", {"lineHeight":"1.0","letterSpacing":"0.1em","fontWeight":"600"}],
+        "headline-lg": ["40px", {"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],
+        "display-lg": ["72px", {"lineHeight":"1.1","letterSpacing":"-0.04em","fontWeight":"900"}],
+        "body-md": ["16px", {"lineHeight":"1.6","fontWeight":"400"}],
+        "body-lg": ["18px", {"lineHeight":"1.6","fontWeight":"400"}],
+        "headline-md": ["24px", {"lineHeight":"1.3","fontWeight":"600"}]
+      },
+      spacing: {
+        "margin-desktop": "64px",
+        "container-max": "1440px",
+        "gutter": "24px",
+        "margin-mobile": "20px"
+      }
+    }
+  }
+}
+</script>
 <style>
-        @keyframes glowPulse {
-            0%, 100% { opacity: 0.3; filter: blur(40px); }
-            50% { opacity: 0.6; filter: blur(60px); }
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-        }
-        .float-animation {
-            animation: float 6s ease-in-out infinite;
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .float-animation, .reveal, .cursor-glow {
-                animation: none !important;
-                transition: none !important;
-                transform: none !important;
-            }
-        }
-        .neon-glow {
-            position: absolute;
-            background: #ccff00;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: -1;
-            animation: glowPulse 4s infinite ease-in-out;
-        }
-        .cursor-glow {
-            position: fixed;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(204,255,0,0.15) 0%, rgba(204,255,0,0) 70%);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 0;
-            transform: translate(-50%, -50%);
-            transition: opacity 0.3s ease;
-            filter: blur(40px);
-        }
-        .glass-card {
-            background: rgba(26, 26, 26, 0.7);
-            backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-left: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .cert-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .cert-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 25px rgba(204, 255, 0, 0.3);
-            z-index: 10;
-        }
-        body {
-            background-color: #0a0a0a;
-            color: #ffffff;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-        .lightbox {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.9);
-            z-index: 100;
-            padding: 20px;
-            cursor: zoom-out;
-            align-items: center;
-            justify-content: center;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-            border: 2px solid rgba(204,255,0,0.2);
-        }
-        header.scrolled {
-            background: rgba(19, 19, 19, 0.9) !important;
-            backdrop-filter: blur(20px) !important;
-            height: 70px;
-        }
-    </style>
+@keyframes glowPulse {
+  0%,100%{opacity:.3;filter:blur(40px);}
+  50%{opacity:.6;filter:blur(60px);}
+}
+@keyframes float {
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+}
+@keyframes fadeInUp {
+  from{opacity:0;transform:translateY(40px);}
+  to{opacity:1;transform:translateY(0);}
+}
+.float-animation{animation:float 6s ease-in-out infinite;}
+@media(prefers-reduced-motion:reduce){.float-animation,.reveal,.cursor-glow{animation:none!important;transition:none!important;transform:none!important;}}
+.neon-glow{position:absolute;background:#ccff00;border-radius:50%;pointer-events:none;z-index:-1;animation:glowPulse 4s infinite ease-in-out;}
+.cursor-glow{position:fixed;width:400px;height:400px;background:radial-gradient(circle,rgba(204,255,0,0.15) 0%,rgba(204,255,0,0) 70%);border-radius:50%;pointer-events:none;z-index:0;transform:translate(-50%,-50%);transition:opacity .3s ease;filter:blur(40px);}
+.glass-card{background:rgba(26,26,26,0.7);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,0.1);border-left:1px solid rgba(255,255,255,0.1);}
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.22,1,.36,1);}
+.reveal.active{opacity:1;transform:translateY(0);}
+.cert-card{transition:all .4s cubic-bezier(.4,0,.2,1);}
+.cert-card:hover{transform:scale(1.05);box-shadow:0 0 25px rgba(204,255,0,0.3);z-index:10;}
+body{background-color:#0a0a0a;color:#fff;overflow-x:hidden;scroll-behavior:smooth;}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.9);z-index:1000;padding:20px;cursor:zoom-out;align-items:center;justify-content:center;}
+.lightbox img{max-width:90%;max-height:90%;object-fit:contain;border:2px solid rgba(204,255,0,0.2);}
+header.scrolled{background:rgba(19,19,19,0.95)!important;backdrop-filter:blur(20px)!important;height:70px;}
+
+/* Mobile menu */
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,10,10,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:2rem;}
+.mobile-menu.open{display:flex;}
+
+/* Offres cards */
+.offre-card{background:rgba(26,26,26,0.7);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:2.5rem;transition:all .4s ease;position:relative;overflow:hidden;}
+.offre-card:hover{border-color:rgba(204,255,0,0.4);transform:translateY(-8px);box-shadow:0 20px 60px rgba(204,255,0,0.1);}
+.offre-card.featured{border-color:rgba(204,255,0,0.5);background:rgba(204,255,0,0.04);}
+.offre-card.featured::before{content:"POPULAIRE";position:absolute;top:16px;right:16px;background:#ccff00;color:#0a0a0a;font-size:10px;font-weight:700;letter-spacing:.15em;padding:4px 10px;}
+
+/* Testimonials */
+.testi-card{background:rgba(26,26,26,0.7);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:2rem;transition:border-color .3s ease;}
+.testi-card:hover{border-color:rgba(204,255,0,0.3);}
+
+/* Stars */
+.stars{color:#ccff00;letter-spacing:2px;font-size:14px;}
+
+/* Scrollbar hide */
+.scrollbar-hide::-webkit-scrollbar{display:none;}
+.scrollbar-hide{-ms-overflow-style:none;scrollbar-width:none;}
+
+/* Progress bar */
+.skill-bar-fill{height:3px;background:#ccff00;transition:width 1.5s cubic-bezier(.22,1,.36,1);}
+
+
+</style>
 </head>
-<body class="selection:bg-primary-fixed-dim selection:text-on-primary">
-<div class="cursor-glow" id="cursor-glow" style="left: 0px; top: 0px;"></div>
-<div class="lightbox" id="lightbox">
-<img alt="Certificate Detail" id="lightbox-img" src=""/>
+<body class="selection:bg-[#ccff00] selection:text-black">
+
+<div class="cursor-glow" id="cursor-glow"></div>
+<div class="lightbox" id="lightbox"><img alt="Detail" id="lightbox-img" src=""/></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <button onclick="closeMobileMenu()" class="absolute top-6 right-6 text-white" aria-label="Fermer">
+    <span class="material-symbols-outlined text-3xl">close</span>
+  </button>
+  <a onclick="closeMobileMenu()" href="#about" class="text-2xl font-bold tracking-widest hover:text-[#ccff00] transition-colors">BIO</a>
+  <a onclick="closeMobileMenu()" href="#experience" class="text-2xl font-bold tracking-widest hover:text-[#ccff00] transition-colors">EXPÉRIENCE</a>
+  <a onclick="closeMobileMenu()" href="#certificates" class="text-2xl font-bold tracking-widest hover:text-[#ccff00] transition-colors">CERTIFIATS</a>
+  <a onclick="closeMobileMenu()" href="#contact" class="bg-[#ccff00] text-black px-8 py-4 text-lg font-bold tracking-widest hover:bg-white transition-colors">COACHING</a>
 </div>
-<header class="fixed top-0 w-full z-50 bg-transparent transition-all duration-300 border-b border-white/5" id="main-header">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-full w-full max-w-container-max mx-auto">
-<div class="text-headline-md font-headline-md font-black tracking-tighter text-primary">
-                ADNANE BOUJANA
-            </div>
-<nav class="hidden md:flex gap-8">
-<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary-fixed-dim transition-all duration-300" href="#about">BIO</a>
-<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary-fixed-dim transition-all duration-300" href="#experience">EXPERIENCE</a>
-<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary-fixed-dim transition-all duration-300" href="#certificates">CERTIFICATS</a>
-<a class="text-label-sm font-label-sm text-primary-fixed-dim hover:text-white transition-colors" href="#contact">COACHING</a>
-</nav>
-</div>
+
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-transparent transition-all duration-300 border-b border-white/5 h-20" id="main-header">
+  <div class="flex justify-between items-center px-5 md:px-16 h-full w-full max-w-[1440px] mx-auto">
+    <div class="text-xl font-black tracking-tighter text-white font-[Montserrat]">ADNANE BOUJANA</div>
+    <nav class="hidden md:flex gap-8">
+      <a class="text-xs font-semibold tracking-widest text-white/60 hover:text-[#ccff00] transition-all duration-300" href="#about">BIO</a>
+      <a class="text-xs font-semibold tracking-widest text-white/60 hover:text-[#ccff00] transition-all duration-300" href="#experience">EXPÉRIENCE</a>
+      <a class="text-xs font-semibold tracking-widest text-white/60 hover:text-[#ccff00] transition-all duration-300" href="#certificates">CERTIFIATS</a>
+      <a class="text-xs font-semibold tracking-widest text-[#ccff00] hover:text-white transition-colors" href="#contact">COACHING</a>
+    </nav>
+    <button class="md:hidden text-white p-2" onclick="openMobileMenu()" aria-label="Menu">
+      <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+  </div>
 </header>
+
 <main class="pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-margin-mobile">
-<div class="neon-glow w-[500px] h-[500px] -top-20 -right-20 opacity-20"></div>
-<div class="neon-glow w-[400px] h-[400px] bottom-0 -left-20 opacity-10" style="background: #ffffff;"></div>
-<div class="max-w-container-max w-full grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative z-10">
-<div class="order-2 md:order-1 reveal">
-<span class="text-label-sm font-label-sm text-primary-fixed-dim mb-4 block tracking-widest"> PERFORMANCE COACHING</span>
-<h1 class="text-display-lg font-display-lg uppercase leading-none mb-6 float-animation">
-                        Adnane <br/> <span class="text-primary-fixed-dim">Boujana</span>
-</h1>
-<div class="flex items-center gap-4 mb-8">
-<div class="h-px w-12 bg-primary-fixed-dim"></div>
-<p class="text-body-lg font-body-lg text-secondary">26 YEARS •  PERFORMANCE SPECIALIST</p>
-</div>
-<p class="text-headline-md font-headline-md italic text-on-surface-variant mb-10 max-w-lg">
-                        "L'excellence n'est pas un acte, mais une habitude de performance pure."
-                    </p>
-<div class="flex flex-wrap gap-4">
-<a class="bg-primary-fixed-dim text-on-primary px-8 py-4 font-headline-md text-body-md hover:bg-white hover:shadow-[0_0_30px_rgba(204,255,0,0.4)] transition-all flex items-center gap-2 group" href="https://wa.me/212606558605">
-<span class="material-symbols-outlined group-hover:rotate-12 transition-transform" style="font-variation-settings: 'FILL' 1;">chat</span>
-                            WHATSAPP
-                        </a>
-<a class="border border-white/20 px-8 py-4 font-headline-md text-body-md hover:border-white transition-all backdrop-blur-sm flex items-center gap-2" href="https://instagram.com">
-<span class="material-symbols-outlined">camera</span>
-                            INSTAGRAM
-                        </a>
-</div>
-</div>
-<div class="order-1 md:order-2 reveal flex justify-center relative">
-<div class="relative w-full max-w-[500px] aspect-[4/5] overflow-hidden glass-card p-2 rounded-xl rotate-3 hover:rotate-0 transition-transform duration-700 float-animation" style="animation-delay: 1s;">
-<img alt="Professional portrait of Adnane Boujana" class="w-full h-full object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIpLbA5zSpUvfa6dI6ulKIFAir-UCl0YGj-bXAewIEv72HumZlP3Q8A5IsZ8akqZzVXhHl7PwKON0tZrU03GAS2zSiphDN4YSANZ52sk_NA9xJOUjxNa1EgDZyIY6z7HhoFIQfJinCoSQww0KHsgatOMYkC6U2_qcxiY1trlJtJS_ViJpRyUAW-5ENMv0cg7irtEdEyXx1Vc2eYoqbHrk1QmPaPadEoZKyu33yh8LUlt6KsYGLGMftj0g3jYOybzc9Wxu7LNmX0Dv9"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-</div>
-<div class="absolute -bottom-6 -right-6 md:right-0 bg-primary-fixed-dim text-on-primary p-6 rounded-lg glass-card border-none shadow-2xl z-10 hidden md:block transition-transform hover:-translate-y-2">
-<p class="text-display-lg font-display-lg leading-none">02+</p>
-<p class="text-label-sm font-label-sm">ANS D'EXPERTISE</p>
-</div>
-</div>
-</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section class="relative min-h-[95vh] flex items-center justify-center overflow-hidden px-5">
+  <div class="neon-glow w-[500px] h-[500px] -top-20 -right-20 opacity-20"></div>
+  <div class="neon-glow w-[400px] h-[400px] bottom-0 -left-20 opacity-10" style="background:#fff;"></div>
+  <div class="max-w-[1440px] w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-center relative z-10">
+    <div class="order-2 md:order-1 reveal active">
+      <span class="text-xs font-semibold tracking-widest text-[#ccff00] mb-4 block font-[Geist]">PERFORMANCE COACHING • CASABLANCA</span>
+      <h1 class="text-[clamp(52px,8vw,72px)] font-[Montserrat] font-black uppercase leading-none mb-6 float-animation" style="letter-spacing:-0.04em;">
+        Adnane<br/><span class="text-[#ccff00]">Boujana</span>
+      </h1>
+      <div class="flex items-center gap-4 mb-6">
+        <div class="h-px w-12 bg-[#ccff00]"></div>
+        <p class="text-[#c6c6c7] text-base font-[Plus_Jakarta_Sans]">26 ANS • PERFORMANCE SPECIALIST</p>
+      </div>
+      <p class="text-xl font-[Montserrat] italic text-white/50 mb-10 max-w-lg">
+        "L'excellence n'est pas un acte, mais une habitude de performance pure."
+      </p>
+      <!-- Stats rapides -->
+      <div class="flex gap-8 mb-10">
+        <div class="w-px bg-white/10"></div>
+        <div>
+          <p class="text-3xl font-black font-[Montserrat] text-[#ccff00]">2+</p>
+          <p class="text-xs tracking-widest text-white/50 font-[Geist]">ANS EXP.</p>
+        </div>
+        <div class="w-px bg-white/10"></div>
+        <div>
+          <p class="text-3xl font-black font-[Montserrat] text-[#ccff00]">8</p>
+          <p class="text-xs tracking-widest text-white/50 font-[Geist]">CERTIFIATS</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a class="bg-[#ccff00] text-black px-8 py-4 font-[Montserrat] font-bold text-base hover:bg-white hover:shadow-[0_0_30px_rgba(204,255,0,0.4)] transition-all flex items-center gap-2 group" href="https://wa.me/212606558605">
+          <span class="material-symbols-outlined group-hover:rotate-12 transition-transform" style="font-variation-settings:'FILL' 1;">chat</span>
+          WHATSAPP
+        </a>
+
+      </div>
+    </div>
+    <div class="order-1 md:order-2 reveal active flex justify-center relative">
+      <div class="relative w-full max-w-[460px] aspect-[4/5] overflow-hidden glass-card p-2 rounded-xl rotate-2 hover:rotate-0 transition-transform duration-700 float-animation" style="animation-delay:1s;">
+        <img alt="Adnane Boujana coach sportif" class="w-full h-full object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIpLbA5zSpUvfa6dI6ulKIFAir-UCl0YGj-bXAewIEv72HumZlP3Q8A5IsZ8akqZzVXhHl7PwKON0tZrU03GAS2zSiphDN4YSANZ52sk_NA9xJOUjxNa1EgDZyIY6z7HhoFIQfJinCoSQww0KHsgatOMYkC6U2_qcxiY1trlJtJS_ViJpRyUAW-5ENMv0cg7irtEdEyXx1Vc2eYoqbHrk1QmPaPadEoZKyu33yh8LUlt6KsYGLGMftj0g3jYOybzc9Wxu7LNmX0Dv9"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="absolute -bottom-4 -right-4 md:right-0 bg-[#ccff00] text-black p-5 rounded-lg shadow-2xl z-10 hidden md:block hover:-translate-y-2 transition-transform">
+        <p class="text-4xl font-black font-[Montserrat] leading-none">02+</p>
+        <p class="text-xs font-semibold tracking-widest font-[Geist]">ANS D'EXPERTISE</p>
+      </div>
+    </div>
+  </div>
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 animate-bounce">
+    <span class="text-xs tracking-widest font-[Geist]">SCROLL</span>
+    <span class="material-symbols-outlined text-sm">expand_more</span>
+  </div>
 </section>
-<!-- Presentation Section -->
-<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10" id="about">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<div class="md:col-span-4 reveal">
-<h2 class="text-headline-lg font-headline-lg mb-4">BIO <span class="text-primary-fixed-dim">PRO</span></h2>
-<div class="h-1 w-20 bg-primary-fixed-dim mb-8"></div>
-</div>
-<div class="md:col-span-8 reveal active">
-<p class="text-body-lg font-body-lg text-secondary leading-relaxed mb-8">
-                        Coach sportif professionnel spécialisé en transformation physique avec une approche axée sur la performance et le dépassement de soi. Mon expertise s'est forgée au sein de structures prestigieuses, notamment durant 5 années d'expérience intensive chez <span class="text-primary font-bold">Punch by Badr Hari</span>.
-                    </p>
-<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
-                        Chaque programme est une ingénierie de précision, alliant science du sport et motivation psychologique pour garantir des résultats durables. Expert en disciplines Les Mills, je transforme la douleur en puissance brute.
-                    </p>
-</div>
-</div>
+
+<!-- ═══════════════════════════════════════════
+     BIO
+═══════════════════════════════════════════ -->
+<section class="py-32 px-5 md:px-16 max-w-[1440px] mx-auto relative z-10" id="about">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+    <div class="md:col-span-4 reveal">
+      <h2 class="text-[40px] font-[Montserrat] font-bold mb-4">BIO <span class="text-[#ccff00]">PRO</span></h2>
+      <div class="h-1 w-20 bg-[#ccff00] mb-8"></div>
+      <!-- Compétences avec barres -->
+      <div class="space-y-5 mt-8">
+        <div>
+          <div class="flex justify-between text-xs font-[Geist] font-semibold tracking-widest mb-2">
+            <span class="text-white/60">BODYPUMP</span><span class="text-[#ccff00]">95%</span>
+          </div>
+          <div class="h-[3px] bg-white/10 rounded-full overflow-hidden">
+            <div class="skill-bar-fill rounded-full" data-width="95" style="width:0%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs font-[Geist] font-semibold tracking-widest mb-2">
+            <span class="text-white/60">RPM / CYCLE</span><span class="text-[#ccff00]">90%</span>
+          </div>
+          <div class="h-[3px] bg-white/10 rounded-full overflow-hidden">
+            <div class="skill-bar-fill rounded-full" data-width="90" style="width:0%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs font-[Geist] font-semibold tracking-widest mb-2">
+            <span class="text-white/60">PERSONAL TRAINING</span><span class="text-[#ccff00]">98%</span>
+          </div>
+          <div class="h-[3px] bg-white/10 rounded-full overflow-hidden">
+            <div class="skill-bar-fill rounded-full" data-width="98" style="width:0%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs font-[Geist] font-semibold tracking-widest mb-2">
+            <span class="text-white/60">NUTRITION SPORTIVE</span><span class="text-[#ccff00]">80%</span>
+          </div>
+          <div class="h-[3px] bg-white/10 rounded-full overflow-hidden">
+            <div class="skill-bar-fill rounded-full" data-width="80" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:col-span-8 reveal active">
+      <p class="text-lg font-[Plus_Jakarta_Sans] text-[#c6c6c7] leading-relaxed mb-6">
+        Coach sportif professionnel spécialisé en transformation physique avec une approche axée sur la performance et le dépassement de soi. Mon expertise s'est forgée au sein de structures prestigieuses, notamment durant 2 années d'expérience intensive chez <span class="text-white font-bold">Punch by Badr Hari</span>.
+      </p>
+      <p class="text-lg font-[Plus_Jakarta_Sans] text-white/50 leading-relaxed mb-10">
+        Chaque programme est une ingénierie de précision, alliant science du sport et motivation psychologique pour garantir des résultats durables. Expert en disciplines Les Mills, je transforme la douleur en puissance brute.
+      </p>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="glass-card p-5 text-center hover:-translate-y-1 transition-transform">
+          <span class="material-symbols-outlined text-[#ccff00] text-3xl mb-2 block" style="font-variation-settings:'FILL' 1;">bolt</span>
+          <p class="text-xs tracking-widest font-[Geist] text-white/60">PERFORMANCE</p>
+        </div>
+        <div class="glass-card p-5 text-center hover:-translate-y-1 transition-transform">
+          <span class="material-symbols-outlined text-[#ccff00] text-3xl mb-2 block" style="font-variation-settings:'FILL' 1;">psychology</span>
+          <p class="text-xs tracking-widest font-[Geist] text-white/60">MINDSET</p>
+        </div>
+        <div class="glass-card p-5 text-center hover:-translate-y-1 transition-transform">
+          <span class="material-symbols-outlined text-[#ccff00] text-3xl mb-2 block" style="font-variation-settings:'FILL' 1;">monitoring</span>
+          <p class="text-xs tracking-widest font-[Geist] text-white/60">RÉSULTATS</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Experience Section -->
-<section class="py-32 bg-surface-container-lowest relative z-10" id="experience">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="mb-20 reveal active">
-<h2 class="text-headline-lg font-headline-lg uppercase">Parcours <span class="text-primary-fixed-dim">Elite</span></h2>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-<!-- Exp 1 -->
-<div class="glass-card p-10 reveal group hover:border-primary-fixed-dim transition-all duration-500 active">
-<div class="flex justify-between items-start mb-8">
-<span class="text-primary-fixed-dim font-black text-headline-md">01</span>
-<span class="material-symbols-outlined text-4xl text-white/20 group-hover:text-primary-fixed-dim group-hover:rotate-12 transition-all">fitness_center</span>
-</div>
-<h3 class="text-headline-md font-headline-md mb-4 uppercase">Punch by Badr Hari</h3>
-<p class="text-label-sm font-label-sm text-primary-fixed-dim mb-6">DÉCEMBRE 2023  — PRÉSENT</p>
-<p class="text-body-md font-body-md text-on-surface-variant">Coach principal spécialisé dans la préparation physique haute intensité et le personal training de luxe.</p>
-</div>
-<!-- Exp 2 -->
-<div class="glass-card p-10 reveal group hover:border-primary-fixed-dim transition-all duration-500 active">
-<div class="flex justify-between items-start mb-8">
-<span class="text-primary-fixed-dim font-black text-headline-md">02</span>
-<span class="material-symbols-outlined text-4xl text-white/20 group-hover:text-primary-fixed-dim group-hover:rotate-12 transition-all">cycle</span>
-</div>
-<h3 class="text-headline-md font-headline-md mb-4 uppercase">Les Mills Specialist</h3>
-<p class="text-label-sm font-label-sm text-primary-fixed-dim mb-6">CERTIFICATION PRO</p>
-<ul class="text-body-md font-body-md text-on-surface-variant space-y-2">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-fixed-dim rounded-full"></span> BodyPump Instructor</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-fixed-dim rounded-full"></span> RPM (Cycle) Specialist</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-fixed-dim rounded-full"></span> BodyAttack Pro</li>
-</ul>
-</div>
-<!-- Exp 3 -->
-<div class="glass-card p-10 reveal group hover:border-primary-fixed-dim transition-all duration-500 active">
-<div class="flex justify-between items-start mb-8">
-<span class="text-primary-fixed-dim font-black text-headline-md">03</span>
-<span class="material-symbols-outlined text-4xl text-white/20 group-hover:text-primary-fixed-dim group-hover:rotate-12 transition-all">monitoring</span>
-</div>
-<h3 class="text-headline-md font-headline-md mb-4 uppercase">Transformation</h3>
-<p class="text-label-sm font-label-sm text-primary-fixed-dim mb-6">PHYSICAL RE-ENGINEERING</p>
-<p class="text-body-md font-body-md text-on-surface-variant">Spécialisation dans le rééquilibrage métabolique et le développement musculaire athlétique.</p>
-</div>
-</div>
-</div>
+
+<!-- ═══════════════════════════════════════════
+     EXPÉRIENCE
+═══════════════════════════════════════════ -->
+<section class="py-32 bg-[#0e0e0e] relative z-10" id="experience">
+  <div class="neon-glow w-[400px] h-[400px] -top-20 left-1/2 opacity-10"></div>
+  <div class="px-5 md:px-16 max-w-[1440px] mx-auto">
+    <div class="mb-20 reveal active">
+      <h2 class="text-[40px] font-[Montserrat] font-bold uppercase">Parcours <span class="text-[#ccff00]">Elite</span></h2>
+      <div class="h-1 w-20 bg-[#ccff00] mt-4"></div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="glass-card p-10 reveal group hover:border-[#ccff00]/30 transition-all duration-500 active border border-transparent">
+        <div class="flex justify-between items-start mb-8">
+          <span class="text-[#ccff00] font-black text-2xl font-[Montserrat]">01</span>
+          <span class="material-symbols-outlined text-4xl text-white/20 group-hover:text-[#ccff00] group-hover:rotate-12 transition-all">fitness_center</span>
+        </div>
+        <h3 class="text-xl font-[Montserrat] font-bold mb-2 uppercase">Punch by Badr Hari</h3>
+        <p class="text-xs font-[Geist] font-semibold tracking-widest text-[#ccff00] mb-6">DÉCEMBRE 2023 — PRÉSENT</p>
+        <p class="text-base font-[Plus_Jakarta_Sans] text-white/50">Coach principal spécialisé dans la préparation physique haute intensité et le personal training de luxe.</p>
+      </div>
+      <div class="glass-card p-10 reveal group hover:border-[#ccff00]/30 transition-all duration-500 active border border-transparent">
+        <div class="flex justify-between items-start mb-8">
+          <span class="text-[#ccff00] font-black text-2xl font-[Montserrat]">02</span>
+          <span class="material-symbols-outlined text-4xl text-white/20 group-hover:text-[#ccff00] group-hover:rotate-12 transition-all">cycle</span>
+        </div>
+        <h3 class="text-xl font-[Montserrat] font-bold mb-2 uppercase">Les Mills Specialist</h3>
+        <p class="text-xs font-[Geist] font-semibold tracking-widest text-[#ccff00] mb-6">CERTIFICATION PRO</p>
+        <ul class="text-base font-[Plus_Jakarta_Sans] text-white/50 space-y-3">
+          <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-[#ccff00] rounded-full flex-shrink-0"></span>BodyPump Instructor</li>
+          <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-[#ccff00] rounded-full flex-shrink-0"></span>RPM (Cycle) Specialist</li>
+          <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-[#ccff00] rounded-full flex-shrink-0"></span>BodyAttack Pro</li>
+        </ul>
+      </div>
+      <div class="glass-card p-10 reveal group hover:border-[#ccff00]/30 transition-all duration-500 active border border-transparent">
+        <div class="flex justify-between items-start mb-8">
+          <span class="text-[#ccff00] font-black text-2xl font-[Montserrat]">03</span>
+          <span class="material-symbols-outlined text-4xl text-white/20 group-hover:text-[#ccff00] group-hover:rotate-12 transition-all">monitoring</span>
+        </div>
+        <h3 class="text-xl font-[Montserrat] font-bold mb-2 uppercase">Transformation</h3>
+        <p class="text-xs font-[Geist] font-semibold tracking-widest text-[#ccff00] mb-6">PHYSICAL RE-ENGINEERING</p>
+        <p class="text-base font-[Plus_Jakarta_Sans] text-white/50">Spécialisation dans le rééquilibrage métabolique et le développement musculaire athlétique.</p>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Certificates Grid -->
-<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10" id="certificates">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal active">
-<div>
-<h2 class="text-headline-lg font-headline-lg uppercase mb-4">Accréditations <span class="text-primary-fixed-dim">Mondiales</span></h2>
-<p class="text-body-lg font-body-lg text-on-surface-variant">Gage de qualité et de standards internationaux d'excellence.</p>
-</div>
-<div class="text-label-sm font-label-sm tracking-widest text-primary-fixed-dim flex items-center gap-4">
-<span class="w-10 h-px bg-primary-fixed-dim"></span> EUROPE ACTIVE • EREPS • LES MILLS
-                </div>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-gutter">
-<!-- Cert 1 -->
-<div class="group relative overflow-hidden glass-card aspect-square reveal cert-card cursor-pointer active" onclick="openLightbox(this)">
-<img alt="Elite Fitness Certification" class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAoqis6eKkz6e_MQ_hQOOMGxuMjKrA_kIHkYI379jeg34_3faYT44HgKF2j6ZAcWjxlT6qq4yQyoAqpRlGUYAX4OnjC3QbBnSGmelZ5CHpjngfo2JcpDhCmLCnCndlWcNY1dtlPLYsI2SGr4UyAUSu2J3tIkzjm46CahrgqBYi7IL-0j3Z83xPy9V-cyfQO_Vho_AJUSWtbeBYHIbRH5Hve8gmydLF_OTrp6XqW8Rh9j62BuWrxw3Z0wbS8HQ0OGbgn_O37VCmADfM"/>
-<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 backdrop-blur-sm">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">zoom_in</span>
-</div>
-</div>
-<!-- Cert 2 -->
-<div class="group relative overflow-hidden glass-card aspect-square reveal cert-card cursor-pointer active" onclick="openLightbox(this)">
-<img alt="International Diploma" class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8rm1BFB7kkRqbAHUDOF4YdI3-zAH9lnsJoYxoZsxQE8ypfgrHwp_HqnXkiC6EeZIv-5vJxCvOauhW6aDDgt5CcCCdBIhaXFHUbHAtamI1uRx24kNII4WIOlQjZP2jQyIZkLuzPj_7q-JddUgpjH4B53rPzjGVI1KOTs8YkL7LmFNB5kGwjk1qQ2nJdaKU-nfxseyIT7T12L38wGB2Q32qbGyzF-g8PVeV5UoEfQycSSVwDqx2bZsprSsbEvbPIxyr-NzUf2Zmc2eS"/>
-<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 backdrop-blur-sm">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">zoom_in</span>
-</div>
-</div>
-<!-- Cert 3 -->
-<div class="group relative overflow-hidden glass-card aspect-square reveal cert-card cursor-pointer active" onclick="openLightbox(this)">
-<img alt="High Performance Certificate" class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWW0xiznl96DNvcClhqcCWUb12nuDQ7iH6zRRzSjvCGbQ48E4C9eVqIcLEcB8UcfiPoN-yRdIBqKy_YxGvLVKOlUrcAEW8s8w-emDPGYVlp2F8aP84p_8Hc9xaGLXmSAoc4k0mh4T5JHdS72OiTyXN9q7E9hHAaRpj8v3yEvgC4hWDbWqLpG2WVUfzX-zoJYLQBDDnTF-aN6qShgJUMVT2D7QSht_Ffnhhn4p3kJ7tsycueQSFDt9hGl1Pwb6P4uJTtcc7f-LQop9p"/>
-<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 backdrop-blur-sm">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">zoom_in</span>
-</div>
-</div>
-<!-- Cert 4 -->
-<div class="group relative overflow-hidden glass-card aspect-square reveal cert-card cursor-pointer active" onclick="openLightbox(this)">
-<img alt="Sports Science Achievement" class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_kwdAhNgk_wZI9o_9yLMluLPpYD7Nwubdqpn9a9dv2oBkqn_PfHHTFEkTVj7gWpJJ5RI_qUpeB6mL7-RlP54b_hoz4Kz6dl19zlJJmKzm-x5BDy5xz7dLCOvAwlEcNyOeBdTZxQjXxYrmk4QSJ2BoVPiAO0J3K9-Guj3HPHnqSRnvZUEbAo62qtler-y--42xQusUKzuI-e3nAUEH3LDKxvtaIf3l3eOZUjzGOpuuIabfxQ_yf1ErlSoXgW-cXYil3g5NfmhO1H0G"/>
-<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 backdrop-blur-sm">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">zoom_in</span>
-</div>
-</div>
-<!-- Cert 5 -->
-<div class="group relative overflow-hidden glass-card aspect-square reveal cert-card cursor-pointer active" onclick="openLightbox(this)">
-<img alt="Global Fitness Credentials" class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz0w6SlboczgCX6YBllBC1kHAL6M1Z7c1DQrbNpaljNeFr09olVoR5mLKAGwz05aiD64AKQ43Y5ZGokHwlauV_OLqyu7sCL1I62Qc1oAwp1qVaTPM_OImyaH-L7D2DYbkN6ajx8UBG1kO9ScFHdAqaCZWaaDAEGdMlC_jVtvPg4YeXUiwIrKthwZTVnF0d_Elb_2bt88zoxeTbNaK2FKkUL-KUR_KPs0eigtFt9ISAYs_HMTbxOJ5NPEJv_QzM-L07Ekrh4985gvIC"/>
-<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 backdrop-blur-sm">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">zoom_in</span>
-</div>
-</div>
-<!-- Cert 6 -->
-<div class="group relative overflow-hidden glass-card aspect-square reveal cert-card cursor-pointer active" onclick="openLightbox(this)">
-<img alt="Advanced Coaching" class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVMMxO1_VtUHAypqzQjsClNY5HRh6n7sxqlRKDKSk6TF06yXSUof9PKl99YPme99KKVASOWgyDbMkZlMPLbGbAnYE0VpgNjmztQmj1V1if-jozoeiMrUWv8nE7W190XKhJpC6yN51ihh7u_1Q-Xgggm-gG9jeHsTQwhfos1ADIJsnpfMFD5mNZBC-ybtVNJ5c9nGilgrb94b5FoEiEefB2fOrF4f3EpL0J7nwwRpQjLL24EqL9EBpVB-SI7EsuusKhdKKo7A-lD2NR"/>
-<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 backdrop-blur-sm">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">zoom_in</span>
-</div>
-</div>
-<!-- Cert 7 -->
-<div class="group relative overflow-hidden glass-card aspect-square reveal cert-card cursor-pointer active" onclick="openLightbox(this)">
-<img alt="Professional Verification" class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGYvsMvoNkZcuUy5Up3_9K8_pkN2NJw5h0pcZq7Ok3fsRG7QIUKx1Pugb_zh3tOIB0h4fzwForPd9pA5hMgzjpg4qddtYk6McZ-rlISLpRd4LGRBSVTJn6Moeo7BsrAy-tl2sScWK9Bbj3t0DmP12jjHLpQqn3r1Qv6gaphAdUGJaaWbH9DMMU_OutyFKCLg8sfVllQPQfQ-Pvhydvd8yF7d6DMymp8mPhpJq705_PY21pA3dr-Uv7UG3EF6jXZXjSnECiQOtFn2FK"/>
-<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 backdrop-blur-sm">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">zoom_in</span>
-</div>
-</div>
-<!-- Cert 8 -->
-<div class="group relative overflow-hidden glass-card aspect-square reveal cert-card cursor-pointer active" onclick="openLightbox(this)">
-<img alt="Sports Science Degree" class="w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDnICSbomARipAJ1vNafngRwAqsNoZS3L6Nb34OwfCSaZHoo5UyFwedhSzpSBYz_Yw-VLeZBbaLz73vE5IysexyMjumUU6yilfotcle5tMoEXvaS4qHd45NHto9Otz0eQIdoDptTc5mRd5Rvod9EBTJNZowPmFey17kLaHBIo4ci2D6nkFLQ0J1f6p8aYW8YKkc9uprzTOiy5XPMPMCCpzZr8JKYiNptq4TA-QNI8m6td0dkWejxAiDJzPb7NiZKnDcPKr68-I31Jf"/>
-<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 backdrop-blur-sm">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">zoom_in</span>
-</div>
-</div>
-</div>
+
+
+
+<!-- ═══════════════════════════════════════════
+     CERTIFIATS
+═══════════════════════════════════════════ -->
+<section class="py-32 px-5 md:px-16 max-w-[1440px] mx-auto relative z-10" id="certificates">
+  <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal active">
+    <div>
+      <h2 class="text-[40px] font-[Montserrat] font-bold uppercase mb-4">Accréditations <span class="text-[#ccff00]">Mondiales</span></h2>
+      <p class="text-lg font-[Plus_Jakarta_Sans] text-white/50">Gage de qualité et de standards internationaux d'excellence.</p>
+    </div>
+    <div class="text-xs font-[Geist] font-semibold tracking-widest text-[#ccff00] flex items-center gap-4">
+      <span class="w-10 h-px bg-[#ccff00]"></span> EUROPE ACTIVE • EREPS • LES MILLS
+    </div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="group relative overflow-hidden glass-card aspect-square cert-card cursor-pointer reveal active" onclick="openLightbox(this)">
+      <img alt="Elite Fitness Certification" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAoqis6eKkz6e_MQ_hQOOMGxuMjKrA_kIHkYI379jeg34_3faYT44HgKF2j6ZAcWjxlT6qq4yQyoAqpRlGUYAX4OnjC3QbBnSGmelZ5CHpjngfo2JcpDhCmLCnCndlWcNY1dtlPLYsI2SGr4UyAUSu2J3tIkzjm46CahrgqBYi7IL-0j3Z83xPy9V-cyfQO_Vho_AJUSWtbeBYHIbRH5Hve8gmydLF_OTrp6XqW8Rh9j62BuWrxw3Z0wbS8HQ0OGbgn_O37VCmADfM"/>
+      <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+        <span class="material-symbols-outlined text-[#ccff00] text-4xl">zoom_in</span>
+      </div>
+    </div>
+    <div class="group relative overflow-hidden glass-card aspect-square cert-card cursor-pointer reveal active" onclick="openLightbox(this)">
+      <img alt="International Diploma" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8rm1BFB7kkRqbAHUDOF4YdI3-zAH9lnsJoYxoZsxQE8ypfgrHwp_HqnXkiC6EeZIv-5vJxCvOauhW6aDDgt5CcCCdBIhaXFHUbHAtamI1uRx24kNII4WIOlQjZP2jQyIZkLuzPj_7q-JddUgpjH4B53rPzjGVI1KOTs8YkL7LmFNB5kGwjk1qQ2nJdaKU-nfxseyIT7T12L38wGB2Q32qbGyzF-g8PVeV5UoEfQycSSVwDqx2bZsprSsbEvbPIxyr-NzUf2Zmc2eS"/>
+      <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+        <span class="material-symbols-outlined text-[#ccff00] text-4xl">zoom_in</span>
+      </div>
+    </div>
+    <div class="group relative overflow-hidden glass-card aspect-square cert-card cursor-pointer reveal active" onclick="openLightbox(this)">
+      <img alt="High Performance Certificate" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWW0xiznl96DNvcClhqcCWUb12nuDQ7iH6zRRzSjvCGbQ48E4C9eVqIcLEcB8UcfiPoN-yRdIBqKy_YxGvLVKOlUrcAEW8s8w-emDPGYVlp2F8aP84p_8Hc9xaGLXmSAoc4k0mh4T5JHdS72OiTyXN9q7E9hHAaRpj8v3yEvgC4hWDbWqLpG2WVUfzX-zoJYLQBDDnTF-aN6qShgJUMVT2D7QSht_Ffnhhn4p3kJ7tsycueQSFDt9hGl1Pwb6P4uJTtcc7f-LQop9p"/>
+      <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+        <span class="material-symbols-outlined text-[#ccff00] text-4xl">zoom_in</span>
+      </div>
+    </div>
+    <div class="group relative overflow-hidden glass-card aspect-square cert-card cursor-pointer reveal active" onclick="openLightbox(this)">
+      <img alt="Sports Science Achievement" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_kwdAhNgk_wZI9o_9yLMluLPpYD7Nwubdqpn9a9dv2oBkqn_PfHHTFEkTVj7gWpJJ5RI_qUpeB6mL7-RlP54b_hoz4Kz6dl19zlJJmKzm-x5BDy5xz7dLCOvAwlEcNyOeBdTZxQjXxYrmk4QSJ2BoVPiAO0J3K9-Guj3HPHnqSRnvZUEbAo62qtler-y--42xQusUKzuI-e3nAUEH3LDKxvtaIf3l3eOZUjzGOpuuIabfxQ_yf1ErlSoXgW-cXYil3g5NfmhO1H0G"/>
+      <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+        <span class="material-symbols-outlined text-[#ccff00] text-4xl">zoom_in</span>
+      </div>
+    </div>
+    <div class="group relative overflow-hidden glass-card aspect-square cert-card cursor-pointer reveal active" onclick="openLightbox(this)">
+      <img alt="Global Fitness Credentials" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz0w6SlboczgCX6YBllBC1kHAL6M1Z7c1DQrbNpaljNeFr09olVoR5mLKAGwz05aiD64AKQ43Y5ZGokHwlauV_OLqyu7sCL1I62Qc1oAwp1qVaTPM_OImyaH-L7D2DYbkN6ajx8UBG1kO9ScFHdAqaCZWaaDAEGdMlC_jVtvPg4YeXUiwIrKthwZTVnF0d_Elb_2bt88zoxeTbNaK2FKkUL-KUR_KPs0eigtFt9ISAYs_HMTbxOJ5NPEJv_QzM-L07Ekrh4985gvIC"/>
+      <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+        <span class="material-symbols-outlined text-[#ccff00] text-4xl">zoom_in</span>
+      </div>
+    </div>
+    <div class="group relative overflow-hidden glass-card aspect-square cert-card cursor-pointer reveal active" onclick="openLightbox(this)">
+      <img alt="Advanced Coaching" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVMMxO1_VtUHAypqzQjsClNY5HRh6n7sxqlRKDKSk6TF06yXSUof9PKl99YPme99KKVASOWgyDbMkZlMPLbGbAnYE0VpgNjmztQmj1V1if-jozoeiMrUWv8nE7W190XKhJpC6yN51ihh7u_1Q-Xgggm-gG9jeHsTQwhfos1ADIJsnpfMFD5mNZBC-ybtVNJ5c9nGilgrb94b5FoEiEefB2fOrF4f3EpL0J7nwwRpQjLL24EqL9EBpVB-SI7EsuusKhdKKo7A-lD2NR"/>
+      <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+        <span class="material-symbols-outlined text-[#ccff00] text-4xl">zoom_in</span>
+      </div>
+    </div>
+    <div class="group relative overflow-hidden glass-card aspect-square cert-card cursor-pointer reveal active" onclick="openLightbox(this)">
+      <img alt="Professional Verification" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGYvsMvoNkZcuUy5Up3_9K8_pkN2NJw5h0pcZq7Ok3fsRG7QIUKx1Pugb_zh3tOIB0h4fzwForPd9pA5hMgzjpg4qddtYk6McZ-rlISLpRd4LGRBSVTJn6Moeo7BsrAy-tl2sScWK9Bbj3t0DmP12jjHLpQqn3r1Qv6gaphAdUGJaaWbH9DMMU_OutyFKCLg8sfVllQPQfQ-Pvhydvd8yF7d6DMymp8mPhpJq705_PY21pA3dr-Uv7UG3EF6jXZXjSnECiQOtFn2FK"/>
+      <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+        <span class="material-symbols-outlined text-[#ccff00] text-4xl">zoom_in</span>
+      </div>
+    </div>
+    <div class="group relative overflow-hidden glass-card aspect-square cert-card cursor-pointer reveal active" onclick="openLightbox(this)">
+      <img alt="Sports Science Degree" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDnICSbomARipAJ1vNafngRwAqsNoZS3L6Nb34OwfCSaZHoo5UyFwedhSzpSBYz_Yw-VLeZBbaLz73vE5IysexyMjumUU6yilfotcle5tMoEXvaS4qHd45NHto9Otz0eQIdoDptTc5mRd5Rvod9EBTJNZowPmFey17kLaHBIo4ci2D6nkFLQ0J1f6p8aYW8YKkc9uprzTOiy5XPMPMCCpzZr8JKYiNptq4TA-QNI8m6td0dkWejxAiDJzPb7NiZKnDcPKr68-I31Jf"/>
+      <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+        <span class="material-symbols-outlined text-[#ccff00] text-4xl">zoom_in</span>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Skills Section -->
-<section class="py-32 bg-surface-container-low overflow-hidden relative z-10">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="flex flex-wrap gap-x-12 gap-y-8 reveal active">
-<div class="flex flex-col gap-4 min-w-[200px] hover:-translate-y-2 transition-transform">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">bolt</span>
-<h4 class="text-headline-md font-headline-md">PERFORMANCE</h4>
-<div class="flex flex-wrap gap-2">
-<span class="border border-white/10 px-3 py-1 text-label-sm font-label-sm">TRANSFORMATION</span>
-<span class="border border-white/10 px-3 py-1 text-label-sm font-label-sm">ENDURANCE</span>
-</div>
-</div>
-<div class="flex flex-col gap-4 min-w-[200px] hover:-translate-y-2 transition-transform">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">psychology</span>
-<h4 class="text-headline-md font-headline-md">MINDSET</h4>
-<div class="flex flex-wrap gap-2">
-<span class="border border-white/10 px-3 py-1 text-label-sm font-label-sm">MOTIVATION</span>
-<span class="border border-white/10 px-3 py-1 text-label-sm font-label-sm">DISCIPLINE</span>
-</div>
-</div>
-<div class="flex flex-col gap-4 min-w-[200px] hover:-translate-y-2 transition-transform">
-<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">speed</span>
-<h4 class="text-headline-md font-headline-md">EXPERTISES</h4>
-<div class="flex flex-wrap gap-2">
-<span class="border border-white/10 px-3 py-1 text-label-sm font-label-sm">BODYPUMP</span>
-<span class="border border-white/10 px-3 py-1 text-label-sm font-label-sm">RPM</span>
-<span class="border border-white/10 px-3 py-1 text-label-sm font-label-sm">CARDIO</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Action Gallery — 5 photos originales uniquement, sans doublons -->
+
+
+
+<!-- ═══════════════════════════════════════════
+     GALERIE PHOTOS
+═══════════════════════════════════════════ -->
 <section class="py-32 relative z-10">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16 reveal active">
-<h2 class="text-headline-lg font-headline-lg uppercase">Action <span class="text-primary-fixed-dim">Gallery</span></h2>
-</div>
-<div class="flex overflow-x-auto pb-10 gap-gutter px-margin-mobile snap-x scrollbar-hide">
-<div class="min-w-[92vw] md:min-w-[900px] h-[60vh] md:h-[70vh] glass-card overflow-hidden snap-center reveal group cursor-pointer active">
-<img alt="High energy spin class" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBluKvWFC6L5h1qGu263BenwMm3sbF5KQUFCh4AbKffv9CXCzqDhy21cZjSdJN-uytAieJaslLxLmOsu2ly51shQQR_Ct1hvuQqau_OuERyEx91RzvtxhOBijH5ibwS2kw87W9yTXo8VJEWi4wD0G0sP7vuMU1-Vs_P7SxHCP9RgNvQcVoQ1boVHq6yglAu1hZllZFXUSqjZtWux3EohGuC-qt_3Y9LKQKmzrrsWp-eoNW8dkFFGoM7EiKj5HpfsC4F9OPyHtvVJalF"/>
-</div>
-<div class="min-w-[92vw] md:min-w-[900px] h-[60vh] md:h-[70vh] glass-card overflow-hidden snap-center reveal group cursor-pointer active">
-<img alt="Adnane coaching session" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYZOvotS_OQY5_0voshFcyfG3EXb8sz3gq44mfwLDJ04zWxRo1gkVEO-GWDRqc2-4g3O55u7ADvS7GYr1H1Cin-gpc_kDLvQz_oYGJSZ914lU9H0l29j4QgwO38pp0g400329Iijc8jOj32p36224grkvwwkHcs-Byet5DNbTkxahcWzaqijstGimvCogCpv6huj9UJOhLyck1JK0Rz4r4UVlnoj-0DwU_VGdtssLR-YrTFAw8qtdQFq-pC2mMghj8SbcmUaShNkr5"/>
-</div>
-<div class="min-w-[92vw] md:min-w-[900px] h-[60vh] md:h-[70vh] glass-card overflow-hidden snap-center reveal group cursor-pointer active">
-<img alt="Fitness intensity" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvdWplYxnTpjgMzaW81b5BAbS5xgwOi27TUv5Lr0v7uqNLRHCReCaDAksCPcpGyuLxOt01LBI_SJu45u0i8bvHp0VrVeiLBn8H6wibgCkLAMhQyhI9OFKSCwi1vNCecAbjMpiGSSBk1lUh4mHT87tbRbIsNwkf2iP7qy-f3ufix7l1TyHZc0rNMYT4tp7s3-IA8POj04ZOtWkBaRDUL0paWxPtRC1PcMPCyrJtEkGQL1BlAk8xU0QTQW9dgmlZ-aKsptJ9uaCfrkdU"/>
-</div>
-<div class="min-w-[92vw] md:min-w-[900px] h-[60vh] md:h-[70vh] glass-card overflow-hidden snap-center reveal group cursor-pointer active">
-<img alt="High performance training" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRddzgpiKtNTgEO4tjPvpBx9NIemN3pfb_tjJdJWnhg0MZv8GWbM42k0OL1ZNPxd_dp-nMtmyPR4z4MrSGdyVUaVkG16WyiJEZLocUSku-86GAJrDvxAMhBnObZwzmF6FXGTu1yPk0XQYfDSx6v7sGZ0JHrU6cU9D3PZ9ThMjfy-co0XnCQLCcmdeCaz8BiqhAD2uvasYA6p6JmIWtl37_Qe2exmBhTdf18o4gLwnl_tCFpogRXypDg6vMUSN8hhRaXTTpXruZ5Lci"/>
-</div>
+  <div class="px-5 md:px-16 max-w-[1440px] mx-auto mb-16 reveal active">
+    <h2 class="text-[40px] font-[Montserrat] font-bold uppercase">Action <span class="text-[#ccff00]">Gallery</span></h2>
+  </div>
+  <div class="flex overflow-x-auto pb-10 gap-6 px-5 snap-x scrollbar-hide">
+    <div class="min-w-[92vw] md:min-w-[900px] h-[60vh] md:h-[70vh] glass-card overflow-hidden snap-center reveal active group cursor-pointer" onclick="openLightbox(this)">
+      <img alt="High energy spin class" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBluKvWFC6L5h1qGu263BenwMm3sbF5KQUFCh4AbKffv9CXCzqDhy21cZjSdJN-uytAieJaslLxLmOsu2ly51shQQR_Ct1hvuQqau_OuERyEx91RzvtxhOBijH5ibwS2kw87W9yTXo8VJEWi4wD0G0sP7vuMU1-Vs_P7SxHCP9RgNvQcVoQ1boVHq6yglAu1hZllZFXUSqjZtWux3EohGuC-qt_3Y9LKQKmzrrsWp-eoNW8dkFFGoM7EiKj5HpfsC4F9OPyHtvVJalF"/>
+    </div>
+    <div class="min-w-[92vw] md:min-w-[900px] h-[60vh] md:h-[70vh] glass-card overflow-hidden snap-center reveal active group cursor-pointer" onclick="openLightbox(this)">
+      <img alt="Adnane coaching session" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYZOvotS_OQY5_0voshFcyfG3EXb8sz3gq44mfwLDJ04zWxRo1gkVEO-GWDRqc2-4g3O55u7ADvS7GYr1H1Cin-gpc_kDLvQz_oYGJSZ914lU9H0l29j4QgwO38pp0g400329Iijc8jOj32p36224grkvwwkHcs-Byet5DNbTkxahcWzaqijstGimvCogCpv6huj9UJOhLyck1JK0Rz4r4UVlnoj-0DwU_VGdtssLR-YrTFAw8qtdQFq-pC2mMghj8SbcmUaShNkr5"/>
+    </div>
+    <div class="min-w-[92vw] md:min-w-[900px] h-[60vh] md:h-[70vh] glass-card overflow-hidden snap-center reveal active group cursor-pointer" onclick="openLightbox(this)">
+      <img alt="Fitness intensity" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvdWplYxnTpjgMzaW81b5BAbS5xgwOi27TUv5Lr0v7uqNLRHCReCaDAksCPcpGyuLxOt01LBI_SJu45u0i8bvHp0VrVeiLBn8H6wibgCkLAMhQyhI9OFKSCwi1vNCecAbjMpiGSSBk1lUh4mHT87tbRbIsNwkf2iP7qy-f3ufix7l1TyHZc0rNMYT4tp7s3-IA8POj04ZOtWkBaRDUL0paWxPtRC1PcMPCyrJtEkGQL1BlAk8xU0QTQW9dgmlZ-aKsptJ9uaCfrkdU"/>
+    </div>
+    <div class="min-w-[92vw] md:min-w-[900px] h-[60vh] md:h-[70vh] glass-card overflow-hidden snap-center reveal active group cursor-pointer" onclick="openLightbox(this)">
+      <img alt="High performance training" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRddzgpiKtNTgEO4tjPvpBx9NIemN3pfb_tjJdJWnhg0MZv8GWbM42k0OL1ZNPxd_dp-nMtmyPR4z4MrSGdyVUaVkG16WyiJEZLocUSku-86GAJrDvxAMhBnObZwzmF6FXGTu1yPk0XQYfDSx6v7sGZ0JHrU6cU9D3PZ9ThMjfy-co0XnCQLCcmdeCaz8BiqhAD2uvasYA6p6JmIWtl37_Qe2exmBhTdf18o4gLwnl_tCFpogRXypDg6vMUSN8hhRaXTTpXruZ5Lci"/>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+<section class="py-32 px-5 md:px-16 relative overflow-hidden z-10" id="contact">
+  <div class="neon-glow w-[600px] h-[600px] -bottom-40 left-1/2 -translate-x-1/2 opacity-20"></div>
+  <div class="max-w-[1440px] mx-auto">
+    <div class="mb-20 reveal active">
+      <span class="text-xs font-[Geist] font-semibold tracking-widest text-[#ccff00] mb-4 block">PRÊT À TRANSFORMER TON CORPS ?</span>
+      <h2 class="text-[40px] font-[Montserrat] font-bold uppercase">Démarrons <span class="text-[#ccff00]">ensemble</span></h2>
+      <div class="h-1 w-20 bg-[#ccff00] mt-4"></div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-2xl">
+      <!-- Infos contact -->
+      <div class="space-y-8 reveal active">
+        <div class="flex items-start gap-5 group">
+          <div class="w-12 h-12 glass-card flex items-center justify-center flex-shrink-0 group-hover:border-[#ccff00]/40 transition-colors">
+            <span class="material-symbols-outlined text-[#ccff00]" style="font-variation-settings:'FILL' 1;">call</span>
+          </div>
+          <div>
+            <p class="text-xs font-[Geist] font-semibold tracking-widest text-white/40 mb-1">PHONE / WHATSAPP</p>
+            <a class="text-xl font-[Montserrat] font-bold hover:text-[#ccff00] transition-colors" href="tel:0606558605">0606-558605</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 group">
+          <div class="w-12 h-12 glass-card flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[#ccff00]" style="font-variation-settings:'FILL' 1;">mail</span>
+          </div>
+          <div>
+            <p class="text-xs font-[Geist] font-semibold tracking-widest text-white/40 mb-1">EMAIL DIRECT</p>
+            <a class="text-xl font-[Montserrat] font-bold hover:text-[#ccff00] transition-colors break-all" href="mailto:Adnaneboujana@gmail.com">Adnaneboujana@gmail.com</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 group">
+          <div class="w-12 h-12 glass-card flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[#ccff00]" style="font-variation-settings:'FILL' 1;">location_on</span>
+          </div>
+          <div>
+            <p class="text-xs font-[Geist] font-semibold tracking-widest text-white/40 mb-1">LOCALISATION</p>
+            <p class="text-xl font-[Montserrat] font-bold">Casablanca, Maroc</p>
+            <p class="text-sm font-[Plus_Jakarta_Sans] text-white/40 mt-1">Punch by Badr Hari</p>
+          </div>
+        </div>
+        <div class="pt-4">
+          <a class="inline-flex items-center gap-3 bg-[#ccff00] text-black px-10 py-5 font-[Montserrat] font-bold text-base tracking-widest hover:bg-white hover:scale-105 transition-all shadow-xl" href="https://wa.me/212606558605">
+            <span class="material-symbols-outlined animate-pulse" style="font-variation-settings:'FILL' 1;">bolt</span>
+            DÉBUTER LE COACHING
+          </a>
+        </div>
+      </div>
+      </div>
 </div>
 </section>
-<!-- Contact Section -->
-<section class="py-32 px-margin-mobile relative overflow-hidden z-10" id="contact">
-<div class="neon-glow w-[600px] h-[600px] -bottom-40 left-1/2 -translate-x-1/2 opacity-30"></div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left mb-16">
-<div class="flex items-start gap-4 group">
-<span class="material-symbols-outlined text-primary-fixed-dim text-3xl group-hover:scale-110 transition-transform">call</span>
-<div>
-<p class="text-label-sm font-label-sm text-secondary mb-1">PHONE / WHATSAPP</p>
-<a class="text-headline-md font-headline-md hover:text-primary-fixed-dim transition-colors" href="tel:0606558605">0606-558605</a>
-</div>
-</div>
-<div class="flex items-start gap-4 group">
-<span class="material-symbols-outlined text-primary-fixed-dim text-3xl group-hover:scale-110 transition-transform">mail</span>
-<div>
-<p class="text-label-sm font-label-sm text-secondary mb-1">EMAIL DIRECT</p>
-<a class="text-headline-md font-headline-md hover:text-primary-fixed-dim transition-colors break-all" href="mailto:Adnaneboujana@gmail.com">Adnaneboujana@gmail.com</a>
-</div>
-</div>
-</div>
-<div class="flex justify-center">
-<a class="bg-primary-fixed-dim text-on-primary px-12 py-5 font-headline-md text-headline-md hover:bg-white hover:scale-105 transition-all flex items-center gap-4 shadow-xl" href="https://wa.me/212606558605">
-<span class="material-symbols-outlined animate-pulse" style="font-variation-settings: 'FILL' 1;">bolt</span>
-                        DÉBUTER LE COACHING
-                    </a>
-</div>
-</div>
-</section>
+
 </main>
-<footer class="bg-background border-t border-surface-container-highest relative z-10">
-<div class="flex flex-col md:flex-row justify-between items-center py-12 px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto gap-gutter">
-<div class="text-headline-md font-headline-md font-bold text-primary">
-                ADNANE BOUJANA
-            </div>
-<div class="text-body-md font-body-md text-secondary text-center md:text-left">
-                © 2026 ASSIA NOUAOURY.
-            </div>
-<div class="flex gap-6">
-<a class="text-label-sm font-label-sm text-on-secondary-container hover:text-primary-fixed-dim transition-colors" href="#">INSTAGRAM</a>
-<a class="text-label-sm font-label-sm text-on-secondary-container hover:text-primary-fixed-dim transition-colors" href="#">LINKEDIN</a>
-</div>
-</div>
+
+<!-- Footer -->
+<footer class="bg-[#0a0a0a] border-t border-[#353534] relative z-10">
+  <div class="flex flex-col md:flex-row justify-between items-center py-12 px-5 md:px-16 w-full max-w-[1440px] mx-auto gap-6">
+    <div class="text-xl font-[Montserrat] font-black text-white">ADNANE BOUJANA</div>
+    <div class="text-sm font-[Plus_Jakarta_Sans] text-[#c6c6c7] text-center">© 2026 ASSIA NOUAOURY.</div>
+    <div class="flex gap-6">
+      <a class="text-xs font-[Geist] font-semibold tracking-widest text-white/40 hover:text-[#ccff00] transition-colors" href="https://instagram.com" target="_blank">INSTAGRAM</a>
+      <a class="text-xs font-[Geist] font-semibold tracking-widest text-white/40 hover:text-[#ccff00] transition-colors" href="https://linkedin.com" target="_blank">LINKEDIN</a>
+    </div>
+  </div>
 </footer>
+
 <script>
-        const cursorGlow = document.getElementById('cursor-glow');
-        let glowX = 0, glowY = 0;
-        let mouseX = 0, mouseY = 0;
+const cursorGlow = document.getElementById('cursor-glow');
+let glowX=0,glowY=0,mouseX=0,mouseY=0;
+document.addEventListener('mousemove',e=>{mouseX=e.clientX;mouseY=e.clientY;});
+document.addEventListener('touchmove',e=>{mouseX=e.touches[0].clientX;mouseY=e.touches[0].clientY;});
+function animateGlow(){glowX+=(mouseX-glowX)*.1;glowY+=(mouseY-glowY)*.1;cursorGlow.style.left=glowX+'px';cursorGlow.style.top=glowY+'px';requestAnimationFrame(animateGlow);}
+animateGlow();
 
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-        });
+const header=document.getElementById('main-header');
+window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>50);});
 
-        document.addEventListener('touchmove', (e) => {
-            mouseX = e.touches[0].clientX;
-            mouseY = e.touches[0].clientY;
-        });
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('active');});},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
-        function animateGlow() {
-            glowX += (mouseX - glowX) * 0.1;
-            glowY += (mouseY - glowY) * 0.1;
-            cursorGlow.style.left = `${glowX}px`;
-            cursorGlow.style.top = `${glowY}px`;
-            requestAnimationFrame(animateGlow);
-        }
-        animateGlow();
+// Skill bars
+const skillObserver=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.skill-bar-fill').forEach(bar=>{
+        bar.style.width=bar.dataset.width+'%';
+      });
+    }
+  });
+},{threshold:.3});
+document.querySelectorAll('#about').forEach(el=>skillObserver.observe(el));
 
-        const header = document.getElementById('main-header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
+// Lightbox
+const lightbox=document.getElementById('lightbox');
+const lightboxImg=document.getElementById('lightbox-img');
+function openLightbox(el){
+  const img=el.querySelector('img');
+  if(img){lightboxImg.src=img.src;lightbox.style.display='flex';document.body.style.overflow='hidden';}
+}
+lightbox.addEventListener('click',()=>{lightbox.style.display='none';document.body.style.overflow='auto';});
 
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+// Mobile menu
+function openMobileMenu(){document.getElementById('mobile-menu').classList.add('open');document.body.style.overflow='hidden';}
+function closeMobileMenu(){document.getElementById('mobile-menu').classList.remove('open');document.body.style.overflow='auto';}
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const id=this.getAttribute('href');
+    if(id==='#')return;
+    e.preventDefault();
+    const t=document.querySelector(id);
+    if(t){window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-80,behavior:'smooth'});}
+  });
+});
 
-        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-
-        function openLightbox(el) {
-            const imgSrc = el.querySelector('img').src;
-            lightboxImg.src = imgSrc;
-            lightbox.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        lightbox.addEventListener('click', () => {
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                e.preventDefault();
-                const target = document.querySelector(targetId);
-                if (target) {
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
-</body></html>
+</script>
+</body>
+</html>
